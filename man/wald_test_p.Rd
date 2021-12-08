@@ -12,7 +12,7 @@ wald_test_p(beta, se)
 \item{se}{Standard error of the model}
 }
 \value{
-P-value
+P-value (as numeric)
 }
 \description{
 Simple calculation of p-value from a Wald test
