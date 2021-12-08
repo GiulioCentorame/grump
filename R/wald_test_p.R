@@ -15,9 +15,11 @@
 #'
 #' wald_test_p(beta, se)
 wald_test_p <- function(beta, se){
-  2*pnorm(q = abs(beta/se),
-          mean = 0,
-          sd = 1,
-          lower.tail = FALSE,
-          log.p = FALSE)
+  as.vector(
+    2*pnorm(q = abs(beta/se),
+            mean = 0,
+            sd = 1,
+            lower.tail = FALSE,
+            log.p = FALSE)
+  )
 }
