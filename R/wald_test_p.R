@@ -5,7 +5,7 @@
 #' @param beta Regression coefficient
 #' @param se Standard error of the model
 #'
-#' @return P-value
+#' @return P-value (as numeric vector)
 #' @export
 #'
 #' @examples
