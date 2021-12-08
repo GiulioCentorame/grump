@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^grump\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
