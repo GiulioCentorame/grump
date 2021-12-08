@@ -1,4 +1,4 @@
-#' Obtain summary statistics from a study from GWAScatalog with GRCh37/hg19 position data
+#' Obtain all available associations from a study from GWAScatalog, with GRCh37/hg19 position data
 #'
 #' @importFrom dplyr full_join select mutate rename if_else case_when
 #' @importFrom magrittr %>% %$%
@@ -9,9 +9,9 @@
 #' @export
 #'
 #' @examples
-#' get_sumstats_GWAScatalog("GCST006259")
+#' get_assoc_GWAScatalog("GCST006259")
 #'
-get_sumstats_GWAScatalog <- function(study) {
+get_assoc_GWAScatalog <- function(study) {
   # Avoid useless queries to GWAScatalog
   stopifnot(
     stringr::str_detect(
