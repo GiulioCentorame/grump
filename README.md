@@ -6,11 +6,5 @@ Giulio's R useless miscellaneous package
 You can install the stable version with
 
 ```
-remotes::install_github("GiulioCentorame/grump")
-```
-
-Alternatively, for the development version,
-
-```
-remotes::install_github("GiulioCentorame/grump[devel]")
+BiocManager::install("GiulioCentorame/grump")
 ```
